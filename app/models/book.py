@@ -3,7 +3,7 @@ class Book(db.Model):
     id = db.Column(db.Integer, primary_key = True, autoincrement=True)
     title = db.Column (db.String)
     description = db.Column(db.String)
-    __tablename__ = "books"
+   # __tablename__ = "books"...if we wanna change table name to books
     # Book is a class name and it is going to be connected to a table name book in postgres
     # books plural for table and book singular personal preference
     # def_to_string(self):
